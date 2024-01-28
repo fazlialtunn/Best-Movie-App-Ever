@@ -7,8 +7,10 @@
 
 import UIKit
 
-class HorizontalMovieCell: UICollectionViewCell {
+class HorizontalMovieCell: UICollectionViewCell, ReuseProtocol, NibProtocol {
 
+    @IBOutlet private weak var movieImage: UIImageView!
+    @IBOutlet private weak var movieTitle: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
