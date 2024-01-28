@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+enum HTTPMethods: String {
+    case GET = "GET"
+    case POST = "POST"
+}
+enum ErrorTypes: String, Error {
+    case invalidData = "Invalid data"
+    case invalidURL = "Invalid URL"
+    case generalError = "An error occurred"
+    
+}
+
+class NetworkHelper {
+    static let shared = NetworkHelper()
+    
+    let baseURL = ""
+}
